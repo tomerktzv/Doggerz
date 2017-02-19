@@ -1,0 +1,1696 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+header, nav, main, footer, aside, section, article, a {
+    display: block;
+}
+
+
+.container {
+    padding: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+h2 {
+    color: #c6c6c6;
+    font-family: 'Anton', sans-serif;
+}
+
+#getDogName {
+    display: none;
+}
+
+aside {
+    margin-top: 120px;
+    /*float: left;*/
+    margin-left: 10px;
+    font-size: 15px;
+    /*border: 1px solid black;*/
+}
+
+aside a {
+    display: inline;
+    color: #333333;
+}
+
+aside li {
+    list-style-type: none;
+    color: #333333;
+    display: inline-block;
+}
+
+#currPage {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 760px) and (min-width: 481px) {
+    .container {
+        display: none;
+    }
+    body {
+        background: #c6c6c6;
+    }
+}
+
+
+@media (min-width: 761px) {
+    body {
+        /*border: 1px solid #000000;*/
+        background: #cccccc;
+    }
+
+    .container {
+        background: #cccccc;
+        width: 100%;
+        /*height: 800px;*/
+    }
+
+    #logo {
+        margin: 5px auto 0 auto;
+        width: 140px;
+        height: 90%;
+        display: block;
+        background-image: url("../images/logoNew.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    a#menuButton, a#goBack {
+        display: none;
+    }
+
+    header {
+        /*z-index: 20;*/
+        position: fixed;
+        top: 0;
+        background: #222222;
+        /*height: 10%;*/
+        height: 70px;
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+
+    header span {
+        visibility: hidden;
+    }
+
+    footer {
+        /*z-index: 3;*/
+        padding-top: 2.6%;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        border-top: 1px solid black;
+        background: #222222;
+    }
+
+    footer span {
+        visibility: hidden;
+    }
+
+    main {
+        width: 100%;
+        /*border: 1px solid blue;*/
+        color: #333333;
+        /*margin-top: 122px;*/
+        margin-bottom: 65px;
+    }
+
+    main h1 {
+        color: #333333;
+        text-align: center;
+        padding: 0;
+        /*margin-top: 12%;*/
+        font-size: 300%;
+    }
+
+    #navBar {
+        position: fixed;
+        padding: 0;
+        background: #333333;
+        /*margin-top: 6.6%;*/
+        margin-top: 69px;
+        border-bottom: 1px solid black;
+        width: 100%;
+        height: 50px;
+        font-size: 170%;
+    }
+
+
+    #menuList {
+        text-align: center;
+        padding-top: 0.5%;
+        list-style-type: none;
+        width: 100%;
+    }
+
+    #menuList p {
+        display: none;
+    }
+
+    #menuList li {
+        width: 15.3%;
+        display: inline-block;
+        height: 30px;
+    }
+
+    #menuList li a {
+        color: #cccccc;
+        text-decoration: none;
+    }
+
+    #menuList a > img {
+        width: 50px;
+        height: 40px;
+        border-radius: 30px;
+    }
+
+    h1 {
+        font-family: 'Anton', sans-serif;
+        /*margin: auto;*/
+        font-size: 450%;
+        margin-bottom: 20px;
+        /*margin-top: 145px;*/
+    }
+
+    #homepage main {
+        margin-top: 130px;
+    }
+
+    #homepage main a {
+        /*float: left;*/
+        margin: auto;
+        text-decoration: none;
+        border: 1px solid black;
+        border-radius: 30px;
+        /*width: 83%;*/
+        width: 755px;
+        /*width: 90%;*/
+        height: 180px;
+    }
+
+    #homepage a > h2 {
+        color: #333333;
+    }
+
+    #homepage main a:nth-child(2) {
+        /*margin-right: 5%;*/
+        /*float: right;*/
+        background: url("../images/map3-4.png") no-repeat;
+        background-size: 190px 170px;
+        background-position: right top;
+        margin-bottom: 5px;
+    }
+
+    #homepage main a:nth-child(3) {
+        /*margin-left: 5%;*/
+        /*float: left;*/
+        clear: both;
+        background: url("../images/dogger5.png") no-repeat;
+        background-size: 190px 170px;
+        background-position: left top;
+        /*margin-top: 15px;*/
+    }
+
+    #homepage main a:nth-child(3) h2 {
+        /*margin-top: 180px;*/
+        font-size: 650%;
+        text-align: right;
+        margin-right: 10%;
+    }
+
+    #homepage main a:nth-child(2) h2 {
+        /*margin-top: 170px;*/
+        margin-left: 10%;
+        font-size: 650%;
+        text-align: left;
+    }
+
+    #homepage p {
+        font-size: 150%;
+        color: #333333;
+    }
+
+    #homepage main a:nth-child(2) p {
+        margin-left: 1.2%;
+    }
+
+    #homepage main a:nth-child(3) p {
+        direction: ltr;
+        text-align: right;
+        margin-right: 1.2%;
+    }
+
+    #homepage main a:nth-child(2):hover {
+        background-color: #333333;
+        background-image: url("../images/map3-2.png");
+    }
+
+    #homepage main a:nth-child(3):hover {
+        background-color: #333333;
+        background-image: url("../images/dogger3.png");
+    }
+
+    #homepage a:hover > h2, #homepage a:hover p {
+        color: #cccccc;
+    }
+
+    #findAwalker1 main {
+        margin-top: 130px;
+    }
+
+    #findAwalker1 main h3 {
+        padding: 0;
+        margin: 0;
+        font-size: 180%;
+    }
+
+    #findAwalker1 main img:nth-child(2) {
+        /*padding-top: 50px;*/
+        display: block;
+        margin: auto;
+        border-radius: 60px;
+    }
+
+    #findAwalker1 main a:nth-child(3) {
+        text-align: center;
+        font-size: 160%;
+        text-decoration: none;
+        border-radius: 5px;
+        color: #ffffff;
+        font-weight: bold;
+        margin: 25px auto 0 auto;
+        width: 250px;
+        height: 25px;
+        border: 1px solid black;
+        background: #46a546;
+    }
+
+    #findAwalker1 main h3:nth-child(4) {
+        display: block;
+        bottom: 64px;
+        left: 2%;
+        position: absolute;
+    }
+
+    #findAwalker1 main h3:nth-child(5) {
+        margin-left: 2%;
+    }
+
+
+    #findAwalker2 main{
+        height: 75.2%;
+    }
+
+    #findAwalker2 main h1 {
+        margin-bottom: 30px;
+    }
+
+    #findAwalker2 main section:nth-child(2) {
+        text-align: center;
+        height: 30%;
+        margin: auto;
+    }
+
+
+    #dateLabel {
+        font-size: 200%;
+        font-weight: normal;
+    }
+
+    #date {
+        font-size: 150%;
+        border-radius: 5px;
+        border: 1px solid #333333;
+        text-align: center;
+    }
+
+    #findAwalker2 input {
+        color: black;
+        font-size: 200%;
+    }
+
+
+
+    #findAwalker2 main section:nth-child(3) {
+        margin: auto;
+        width: 55%;
+        height: 30%;
+        font-size: 150%;
+        text-align: center;
+    }
+
+    #findAwalker2 .labels {
+        float: left;
+    }
+
+    #findAwalker2 section h3 {
+        margin-bottom: 15%;
+    }
+
+    #continue span, #continueMaps span, #continueFinished span, #continueMaps2 span, #continueDogs span, #continueMsg span {
+        border: 1px solid black;
+        border-radius: 10px;
+        height: 56px;
+        width: 260px;
+        display: block;
+        color: #333333;
+        margin: auto;
+        text-align: center;
+        font-size: 220%;
+    }
+
+    #continue:hover, #continueMaps:hover, #continueFinished:hover, #continueMaps2:hover, #continueDogs:hover, #continueMsg:hover {
+        text-decoration: none;
+    }
+
+    #continue span:hover, #continueMaps span:hover, #continueFinished span:hover, #continueMaps2 span:hover, #continueDogs span:hover, #continueMsg span:hover {
+        background: #333333;
+        text-decoration: none;
+        color: #cccccc;
+    }
+
+    #map {
+        margin: auto;
+        height: 270px;
+        width: 90%;
+    }
+    .controls {
+        margin-top: 10px;
+        border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 32px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 20px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 180px;
+    }
+
+    #radiusInput {
+        color: black;
+        text-align: center;
+        display: block;
+        margin: 20px auto 0 auto;
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        clear: both;
+        text-overflow: ellipsis;
+        width: 180px;
+    }
+
+    #pac-input:focus {
+        border-color: #4d90fe;
+    }
+
+    .pac-container {
+        font-family: Roboto;
+    }
+
+    #type-selector {
+        color: #fff;
+        background-color: #4d90fe;
+        padding: 5px 11px 0px 11px;
+    }
+
+    #type-selector label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    #target {
+        width: 345px;
+    }
+
+    #getDoggerz main section {
+        font-size: 120%;
+        float: left;
+        margin-left: 15px;
+    }
+
+    #getDoggerz article {
+        width: 85%;
+        margin: auto;
+    }
+
+    #getDoggerz section > section {
+        font-weight: bold;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 150%;
+        text-align: center;
+        border: 1px solid #333333;
+        width: 155px;
+        height: 145px;
+        margin: auto;
+        background: #e0e0e0;
+        border-radius: 25px;
+    }
+
+    #getDoggerz main h1 {
+        top: 10%;
+    }
+
+    #getDoggerz section > section:hover {
+        background: #333333;
+        cursor: pointer;
+    }
+
+    #getDoggerz section:hover > a {
+        color: #cccccc;
+    }
+
+
+
+    #getDoggerz p {
+        font-weight: bold;
+        font-size: 115%;
+        text-align: center;
+        clear: both;
+        margin-bottom: 15px;
+    }
+
+    #getDoggerz main a {
+        text-decoration: none;
+        color: #333333;
+        height: 130px;
+    }
+
+    #getDoggerz section img{
+        display: block;
+        margin: auto;
+        border-radius: 15px;
+    }
+
+    #yossiProfile h1 {
+        text-align: left;
+        margin-left: 25%;
+        width: 20%;
+        margin-bottom: 15px;
+    }
+
+    #yossiProfile main h2 {
+        font-family: 'Anton', sans-serif;
+        color: #333333;
+        text-align: center;
+        font-size: 220%;
+        position: absolute;
+        right: 31%;
+        top: 133px;
+    }
+
+    #yossiProfile section p {
+        margin: 0;
+    }
+
+    #yossiProfile main img:nth-child(2) {
+        margin-top: 1px;
+        margin-left: 6.3%;
+        float: left;
+        border-radius: 30px;
+    }
+
+    #yossiProfile main img:nth-child(5) {
+        margin-top: 1px;
+        margin-right: 6.3%;
+        float: right;
+        border-radius: 30px;
+    }
+
+    #yossiProfile main section:nth-child(3) {
+        padding-left: 20px;
+        float: left;
+        font-family: 'Andika', sans-serif;
+        width: 26%;
+        height: 149px;
+        font-size: 200%;
+        /*border: 1px solid black;*/
+    }
+
+    #yossiProfile main section:nth-child(6) {
+        /*border: 1px solid black;*/
+        padding-right: 20px;
+        /*text-align: right;*/
+        font-family: 'Andika', sans-serif;
+        height: 104px;
+        width: 26%;
+        font-size: 200%;
+        float: right;
+    }
+
+    #continueFinished {
+        clear: both;
+    }
+
+    #yossiProfile main section span {
+        font-size: 80%;
+    }
+
+    #sentRequest main {
+        margin-top: 130px;
+    }
+
+    #sentRequest main h1, #walkConfirmed main h1 {
+        font-size: 300%;
+    }
+
+    #sentRequest main a, #walkConfirmed main a {
+        text-decoration: none;
+        color: #c6c6c6;
+    }
+
+    #sentRequest main span {
+        font-size: 1000%;
+        color: #46a546;
+        text-align: center;
+        margin-top: 7%;
+        display: block;
+    }
+    #walkConfirmed main {
+        margin-top: 130px;
+    }
+
+    #walkConfirmed main h3 {
+        text-align: center;
+    }
+
+    #mapPage #continue span{
+        font-size: 300%;
+    }
+
+
+    #errors{
+        display: none;
+        height: 50px;
+        text-align: center;
+        color: #ff0000;
+        font-weight: bold;
+        font-size: 300%;
+        border: 1px solid transparent;
+    }
+
+    #planAWalk1 main a {
+        padding-top: 55px;
+        padding-left: 15px;
+        width: 65%;
+        background-size: 100%;
+        height: 190px;
+        margin: 0 auto 2% auto;
+        border: 1px solid #333333;
+        border-radius: 30px;
+    }
+
+    #planAWalk1 section a:hover {
+        /*cursor: pointer;*/
+    }
+
+    #planAWalk1 main section a {
+        border: 2px solid red;
+        width: 100%;
+        height:50px;
+    }
+
+    #planAWalk1 main a:nth-child(2) {
+        background: url("../images/footsteps3.png") no-repeat center right;
+    }
+
+    #planAWalk1 h2 {
+        color: #333333;
+        font-size: 450%;
+    }
+
+    #planAWalk1 main a:nth-child(3) {
+        background: url("../images/manFootsteps4.png") no-repeat center right;
+    }
+
+    #planAWalk1 main a:hover {
+        text-decoration: none;
+        background-color: #333333;
+    }
+
+    #planAWalk1 a:hover h2 {
+        color: #cccccc;
+    }
+
+    #planAWalk1 a:nth-child(2):hover {
+         background-image: url("../images/footsteps.png");
+     }
+
+    #planAWalk1 a:nth-child(3):hover {
+        background-image: url("../images/manFootsteps5.png");
+    }
+
+    #howManyDogs main section {
+        display: block;
+        padding-top: 10px;
+        margin: auto;
+        width: 200px;
+        height: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
+        /*border: 1px solid black;*/
+    }
+
+    #howManyDogs section span {
+        border: 1px solid #333333;
+        /*color: #cccccc;*/
+        border-radius: 10px;
+        font-size: 600%;
+        /*background: #333333;*/
+    }
+
+    #howManyDogs section span:hover {
+        color: #cccccc;
+        background: #333333;
+    }
+
+    #howManyDogs section span:nth-child(1) {
+        padding-left: 5px;
+        float: left;
+
+    }
+
+    #howManyDogs section span:nth-child(2) {
+        float: right;
+        padding-right: 3px;
+    }
+
+    #howManyDogs main section:nth-child(3) {
+        height: 185px;
+        width: 600px;
+    }
+
+
+    #howManyDogs main section:nth-child(3) article {
+        margin-left: 5%;
+        margin-bottom: 2px;
+        /*width: 16%;*/
+        width: 80px;
+        height: 80px;
+        display: inline-block;
+        background: url("../images/dogi4.png") no-repeat center;
+        /*background-size: 90% 90px;*/
+        background-size: 90%;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    #howManyDogs main h3 {
+        clear: both;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    #howManyDogs #errors {
+        display: none;
+        width: 80%;
+        height: 55px;
+    }
+
+    #continueDogs h3 {
+        margin: 0;
+    }
+
+    #showWalker main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #showWalker main h1 {
+        font-size: 300%;
+    }
+
+    #showWalker main h2 {
+        font-size: 220%;
+        margin-top: 50px;
+        color: #333333;
+    }
+
+    #showWalker a > h3 {
+        font-size: 222%;
+    }
+
+    #showWalker main > a {
+        margin: 60px auto 0 auto;
+        height: 75px;
+        width: 50%;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: #008000;
+        border: 2px solid #397D02;
+
+        color: #f2f2f2;
+        text-align: center;
+        text-decoration: none;
+
+        border-radius: 30px;
+        box-shadow: 0 8px 0 #2F4F2F;
+        text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+    }
+
+    #walkConfirmed a:nth-child(4) span, #walkConfirmed a:nth-child(4) {
+        color: #c6c6c6;
+        font-size: 300%;
+    }
+
+    #walkConfirmed main span {
+        font-size: 1000%;
+        color: #46a546;
+        text-align: center;
+        display: block;
+        margin-top: 5%;
+    }
+
+    #viewRating main section {
+        height: 135px;
+        width: 740px;
+        margin: auto;
+
+    }
+
+    #viewRating section > img {
+        border-radius: 20px;
+        border: 1px solid black;
+        float: left;
+        /*margin-left: 4%;*/
+    }
+
+    #viewRating section ul {
+        font-size: 190%;
+        float: left;
+        list-style-type: none;
+        margin-left: 3.3%;
+    }
+
+    #contactDoggerz main section {
+        width: 760px;
+        margin: auto;
+        height: 200px;
+    }
+
+    #contactDoggerz article {
+        color: #cccccc;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border: 1px solid black;
+        background: #333333;
+        height: 79px;
+        margin-left: 10.2%;
+    }
+
+    #contactDoggerz section img {
+        float: left;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border: 1px solid black;
+        margin-right: 2%;
+        margin-top: 18px;
+    }
+
+    #contactDoggerz h2 {
+        padding: 0;
+        margin: 0;
+        font-family: Helvetica;
+        font-weight: bold;
+        font-size: 170%;
+        color: #333333;
+    }
+
+    #contactDoggerz h2 a {
+        display: inline;
+    }
+
+    #contactDoggerz article p {
+        font-size: 110%;
+        display: block;
+        width: 70.6%;
+    }
+
+    #contactDoggerz section ul {
+        text-align: center;
+        font-weight: bold;
+        font-size: 140%;
+        list-style-type: none;
+        float: right;
+        color: #F0FFFF;
+    }
+
+    #sendReply section{
+        font-size: 150%;
+        margin: auto;
+        /*border: 1px solid black;*/
+        width: 50%;
+        height: 300px;
+
+    }
+
+    #sendReply form label:nth-child(1) {
+        margin-bottom: 20px;
+    }
+
+    #sendReply h2 {
+        font-family: Helvetica;
+        font-size: 150%;
+        color: #333333;
+        text-align: center;
+    }
+
+    #sendReply textarea, #sendReply input:nth-child(3) {
+        border: 1px solid black;
+        float: right;
+        width: 70%;
+    }
+
+    #sendReply textarea {
+        resize: none;
+        margin-bottom: 30px;
+    }
+
+    #submitMsg {
+        /*width: 100%;*/
+        width: 50%;
+    }
+
+    #sendReply section a {
+        clear: both;
+        /*width: 40%;*/
+        height: 0px;
+        width: 60%;
+        margin: auto;
+        color: #333333;
+        /*border: 2px solid red;*/
+    }
+
+    #continueMsg:hover {
+        text-decoration: none;
+     }
+
+    #sendReply section a:visited {
+        /*color: #333333;*/
+    }
+
+
+
+
+}
+
+/*@media (min-height: 681px) {*/
+    /*.container {*/
+        /*display: none;*/
+    /*}*/
+/*}*/
+
+/*@media (max-height: 666px) {*/
+    /*.container {*/
+        /*display: none;*/
+    /*}*/
+/*}*/
+
+@media (max-width: 480px) {
+
+    #logo {
+        display: block;
+        margin-top: 30px;
+        background-image: url("../images/logoNew.png");
+        width: 84px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #navBar {
+        display: none;
+        padding-left: 5%;
+        position: fixed;
+        left: 0px;
+        background: #c6c6c6;
+        /*margin-top: 17.78%;*/
+        margin-top: 64px;
+        width: 100%;
+        height: 0;
+        font-size: 140%;
+        z-index: 5;
+    }
+
+    #menuList a {
+        border-bottom: 1px solid #cccccc;
+        color: #333333;
+        text-decoration: none;
+    }
+
+    #menuList {
+        list-style-type: none;
+    }
+
+    #menuList li a {
+        font-size: 130%;
+        display: block;
+        margin: 0;
+        width: 90%;
+        margin-bottom: 4%;
+        margin-top: 4%;
+    }
+
+    #menuList li:nth-child(1) a{
+        border-bottom: none;
+        margin: 15% auto 15% auto;
+        text-align: center;
+    }
+
+    #menuList li:nth-child(6) a{
+        position: relative;
+        bottom: 0;
+
+    }
+
+    #menuList a > img {
+        border: 2px solid #333333;
+        border-radius: 60px;
+    }
+
+    body {
+        background: #555555;
+    }
+
+    .container {
+        /*margin: auto;*/
+        background: #555555;
+        /*background: darkred;*/
+        width: 100%;
+        /*height: 640px;*/
+    }
+
+    #logo {
+        margin: auto;
+        width: 140px;
+        height: 57px;
+    }
+
+    header {
+        z-index: 20;
+        position: fixed;
+        top: 0;
+        background: #333333;
+        /*height: 10%;*/
+        height: 64px;
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+
+    #menuButton {
+        float: right;
+        margin-right: 4%;
+        margin-top: 17px;
+        color: #c6c6c6;
+        font-size: 270%;
+    }
+
+    #goBack {
+        height: 30px;
+        margin-top: 17px;
+        font-size: 270%;
+        color: #c6c6c6;
+        float: left;
+        margin-left: 4%;
+    }
+
+    footer {
+        /*z-index: 3;*/
+        /*padding-top: 2.6%;*/
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        /*height: 7.8125%;*/
+        height: 50px;
+        border-top: 1px solid black;
+        background: #333333;
+    }
+
+    footer span {
+        color: #c6c6c6;
+        font-size: 270%;
+    }
+    footer span:nth-child(1) {
+        float: left;
+        margin-left: 10%;
+    }
+    footer span:nth-child(2) {
+        float: left;
+        margin-left: 16.5%;
+    }
+    footer span:nth-child(3) {
+        float: right;
+        margin-right: 10%;
+    }
+    footer span:nth-child(4) {
+        float: right;
+        margin-right: 16.5%;
+    }
+
+    aside {
+        display: none;
+    }
+
+    #homepage main h1 {
+        margin-top: 0;
+        font-size: 200%;
+    }
+
+    #homepage main a {
+        margin: auto;
+        text-decoration: none;
+        border: 1px solid #c6c6c6;
+        /*border: 1px solid red;*/
+        border-radius: 30px;
+        width: 220px;
+    }
+
+    #homepage main a:nth-child(3) {
+        background: url("../images/dogger4.png") no-repeat;
+        background-size: 190px 170px;
+        background-position: center top;
+        /*height: 44.44%;*/
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #homepage main a:nth-child(3) h2 {
+        margin-top: 180px;
+        text-align: center;
+    }
+
+    #homepage main a:nth-child(2) {
+        background: url("../images/map3-2.png") no-repeat;
+        background-size: 190px 170px;
+        background-position: center top;
+        height: 43%;
+    }
+    #homepage main a:nth-child(2) h2 {
+        margin-top: 170px;
+        text-align: center;
+    }
+
+    #homepage main p {
+        display: none;
+    }
+
+    #homepage main {
+        margin-bottom: 52px;
+    }
+
+    #getDoggerz main {
+        height: 100%;
+    }
+
+    main {
+        width: 100%;
+        height: 85%;
+        color: #c6c6c6;
+        margin: 64px auto 52px auto;
+        /*margin-bottom: 7.8125%;*/
+        padding-top: 20px;
+    }
+
+    #findAwalker1 main h3 {
+        padding: 0;
+        margin: 0;
+        font-size: 180%;
+    }
+
+    main h1 {
+        text-align: center;
+        padding: 0;
+        font-size: 200%;
+    }
+
+    #findAwalker1 main img:nth-child(2) {
+        padding-top: 50px;
+        display: block;
+        margin: auto;
+    }
+
+    #findAwalker1 main a:nth-child(3) {
+        padding-top: 0.7%;
+        text-align: center;
+        font-size: 160%;
+        text-decoration: none;
+        border-radius: 5px;
+        color: #ffffff;
+        font-weight: bold;
+        margin: 25px auto 0 auto;
+        text-align: center;
+        display: block;
+        width: 50%;
+        height: 30px;
+        border: 1px solid black;
+        background: #46a546;
+    }
+
+    #findAwalker1 main h3:nth-child(4) {
+        display: block;
+        bottom: 64px;
+        left: 2%;
+        position: absolute;
+    }
+
+    #findAwalker1 main h3:nth-child(5) {
+         margin-left: 2%;
+     }
+
+
+    #findAwalker2 main{
+        height: 75.2%;
+    }
+
+    #findAwalker2 main h1 {
+        margin-bottom: 30px;
+    }
+
+    #findAwalker2 main section:nth-child(2) {
+        text-align: center;
+        height: 30%;
+        margin: auto;
+    }
+
+
+    #dateLabel {
+        font-size: 200%;
+        font-weight: normal;
+    }
+
+    #date {
+        font-size: 150%;
+        border-radius: 5px;
+        border: 1px solid #333333;
+        text-align: center;
+    }
+
+    #findAwalker2 input {
+        color: black;
+        font-size: 150%;
+    }
+
+    #findAwalker2 main section:nth-child(3) {
+        margin: auto;
+        width: 55%;
+        height: 30%;
+        font-size: 150%;
+        text-align: center;
+    }
+
+    #findAwalker2 .labels {
+        float: left;
+    }
+
+    #continue {
+        /*border: 1px solid black;*/
+        width: 50px;
+        margin: 30px auto 0 auto;
+    }
+
+    /*#findAwalker2 section h3 {*/
+        /*margin-bottom: 15%;*/
+    /*}*/
+
+    #continue span, #continueMaps span, #continueFinished span, #continueMaps2 span, #continueDogs span, #continueMsg span{
+        text-decoration: none;
+        display: block;
+        color: #c6c6c6;
+        margin: auto;
+        text-align: center;
+        font-size: 180%;
+    }
+
+    #map {
+        margin: auto;
+        height: 300px;
+        width: 90%;
+    }
+    .controls {
+        margin-top: 10px;
+        border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 32px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 20px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 180px;
+    }
+
+    #radiusInput {
+        color: black;
+        text-align: center;
+        display: block;
+        margin: 20px auto 0 auto;
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        clear: both;
+        text-overflow: ellipsis;
+        width: 180px;
+    }
+
+    #pac-input:focus {
+        border-color: #4d90fe;
+    }
+
+    .pac-container {
+        font-family: Roboto;
+    }
+
+    #type-selector {
+        color: #fff;
+        background-color: #4d90fe;
+        padding: 5px 11px 0px 11px;
+    }
+
+    #type-selector label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    #target {
+        width: 345px;
+    }
+
+    #getDoggerz main {
+        padding-top: 0;
+        margin-bottom: 100px;
+    }
+
+    #getDoggerz main section {
+        text-align: center;
+        font-size: 130%;
+        position: relative;
+    }
+
+    #getDoggerz article {
+        margin-top: 100px;
+    }
+
+    #getDoggerz main section section {
+        padding-top: 6.6%;
+        padding-bottom: 6.6%;
+        font-size: 150%;
+        text-align: center;
+        border: 1px solid #333333;
+        height: 50%;
+        width: 69%;
+        margin: auto;
+        background: #e0e0e0;
+        border-radius: 25px;
+        z-index: 0;
+    }
+
+    #getDoggerz main h1 {
+        padding-top: 2%;
+        padding-bottom: 5%;
+        display: block;
+        height: 5%;
+        top: 64px;
+        background: #555555;;
+        position: fixed;
+        width: 100%;
+        margin: auto;
+        z-index: 2;
+    }
+
+    #getDoggerz main a {
+        text-decoration: none;
+        color: #333333;
+    }
+
+    #getDoggerz section img{
+        position: absolute;
+        margin-left: 8%;
+        border-radius: 50%;
+        left: -15%;
+        top: 0px;
+    }
+
+    #yossiProfile main {
+        padding-top: 2px;
+    }
+
+    #yossiProfile main h1 {
+        font-family: 'Anton', sans-serif;
+    }
+
+    #yossiProfile main h2 {
+        margin-top: 2%;
+        text-align: center;
+        font-size: 200%;
+    }
+
+    #yossiProfile main img:nth-child(2) {
+        margin: 0 auto 0 auto;
+        display: block;
+        border-radius: 30px;
+    }
+
+    #yossiProfile main section {
+        padding-left: 5%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        border-top: 1px solid #777777;
+        border-bottom: 1px solid #777777;
+        font-family: 'Andika', sans-serif;
+        font-size: 160%;
+    }
+
+    #yossiProfile section p {
+        margin: 0;
+    }
+
+    #yossiProfile img:nth-child(5) {
+        display: block;
+        margin: auto;
+        border-radius: 30px;
+    }
+
+    #yossiProfile main section span {
+        font-size: 80%;
+    }
+
+    #continueFinished span{
+        font-size: 140%;
+    }
+
+
+    #sentRequest main, #walkConfirmed main {
+        padding-top: 20px;
+    }
+
+    #sentRequest main h1, #walkConfirmed main h1 {
+        font-size: 300%;
+    }
+
+    #sentRequest main a, #walkConfirmed main a {
+        text-decoration: none;
+        color: #c6c6c6;
+    }
+
+    #sentRequest main span, #walkConfirmed main span {
+        font-size: 1000%;
+        color: #46a546;
+        text-align: center;
+        margin-top: 20%;
+        display: block;
+    }
+
+    #walkConfirmed main h3 {
+        text-align: center;
+    }
+
+    #mapPage #continue span{
+        font-size: 300%;
+    }
+
+
+    #errors{
+        display: none;
+        height: 50px;
+        text-align: center;
+        color: #ff0000;
+        font-weight: bold;
+        font-size: 300%;
+        border: 1px solid transparent;
+    }
+
+    #planAWalk1 main a {
+        width: 80%;
+        height: 180px;
+        margin: 0 auto 5% auto;
+        border: 1px solid #c6c6c6;
+        border-radius: 30px;
+    }
+
+    #planAWalk1 h2 {
+        display: none;
+    }
+
+    #planAWalk1 main a:nth-child(2) {
+        background: url("../images/footsteps.png") no-repeat center;
+    }
+
+    #planAWalk1 main a:nth-child(3) {
+        background: url("../images/manFootsteps.png") no-repeat center;
+    }
+
+    #howManyDogs main {
+
+    }
+
+    #howManyDogs main section {
+        display: block;
+        padding-top: 10px;
+        margin: auto;
+        width: 40%;
+        height: 80px;
+
+    }
+
+    #howManyDogs section span {
+        border: 1px solid #c6c6c6;
+        border-radius: 10px;
+        font-size: 500%;
+    }
+
+    #howManyDogs section span:nth-child(1) {
+        padding-left: 5px;
+        float: left;
+
+     }
+
+    #howManyDogs section span:nth-child(2) {
+        float: right;
+        padding-right: 3px;
+    }
+
+    #howManyDogs main section:nth-child(3) {
+        margin-top: 10%;
+        width: 80%;
+    }
+
+    #howManyDogs main section:nth-child(3) article {
+        margin-left: 2%;
+        margin-bottom: 2px;
+        width: 18%;
+        height: 70%;
+        float: left;
+        background: url("../images/dogi4.png") no-repeat;
+        background-size: 100%;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    #howManyDogs main h3 {
+        margin-top: 11%;
+        text-align: center;
+    }
+
+    #howManyDogs #errors {
+        display: none;
+        width: 80%;
+    }
+
+    #showWalker main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #showWalker main h1 {
+        font-size: 300%;
+    }
+
+    #showWalker main h2 {
+        font-size: 220%;
+        margin-top: 50px;
+    }
+
+    #showWalker a > h3 {
+        font-size: 222%;
+    }
+
+    #showWalker main > a {
+        margin: 60px auto 0 auto;
+        height: 75px;
+        width: 50%;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: #008000;
+        border: 2px solid #397D02;
+
+        color: #f2f2f2;
+        text-align: center;
+        text-decoration: none;
+
+        border-radius: 30px;
+        box-shadow: 0 8px 0 #2F4F2F;
+        text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+    }
+
+    #walkConfirmed a:nth-child(4) span, #walkConfirmed a:nth-child(4) {
+        color: #c6c6c6;
+        font-size: 300%;
+    }
+
+    #viewRating main section {
+        /*border: 1px solid red;*/
+        height: 200px;
+        width: 320px;
+        margin: 0 auto 5px auto;
+
+    }
+
+    #viewRating section > img {
+        clear: both;
+        border-radius: 20px;
+        border: 1px solid black;
+        margin: auto;
+        display: block;
+        float: left;
+    }
+
+    #viewRating section ul {
+        font-size: 150%;
+        float: left;
+        list-style-type: none;
+        margin-left: 3.3%;
+    }
+
+    #viewRating section ul:nth-child(3) {
+        clear: both;
+    }
+
+    #viewRating section ul:nth-child(4) {
+        float: right;
+    }
+
+    #contactDoggerz main section {
+        padding-top: 5px;
+        width: 90%;
+        margin: auto;
+        background: #c6c6c6;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+
+    #contactDoggerz article {
+        clear: both;
+        color: #cccccc;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border: 1px solid black;
+        background: #333333;
+    }
+
+    #contactDoggerz section img {
+        float: left;
+        border-radius: 10px;
+        margin-left: 1%;
+        border: 1px solid black;
+    }
+
+    #contactDoggerz h2 {
+        float: right;
+        padding: 0;
+        margin: 0;
+        font-family: Helvetica;
+        font-weight: bold;
+        font-size: 300%;
+        text-decoration: underline;
+        margin-right: 20%;
+        color: #333333;
+    }
+
+    #contactDoggerz article p {
+        font-size: 130%;
+    }
+
+    #contactDoggerz section ul {
+        /*display: none;*/
+        margin-right: 15%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 120%;
+        list-style-type: none;
+        float: right;
+        color: #333333;
+    }
+
+    #sendReply section{
+        font-size: 180%;
+        margin: auto;
+        width: 85%;
+        height: 300px;
+
+    }
+
+    #sendReply label {
+        text-align: center;
+        display: block;
+    }
+
+    #sendReply h2 {
+        font-family: Helvetica;
+        font-size: 100%;
+        color: #c6c6c6;
+        text-align: center;
+    }
+
+    #sendReply textarea, #sendReply input:nth-child(3) {
+        color: #333333;
+        border: 1px solid black;
+        width: 99%;
+    }
+
+    #sendReply textarea {
+        resize: none;
+        margin-bottom: 30px;
+    }
+
+    #submitMsg {
+        width: 100%;
+    }
+
+}

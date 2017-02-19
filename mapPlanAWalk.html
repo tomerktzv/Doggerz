@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Choose Location</title>
+    <link rel="shortcut icon" href="images/dogFoot.png">
+    <script src="includes/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="stylesheet" href="includes/styles.css">
+    <script src="includes/scripts.js"></script>
+    <script src="includes/getInfo.js"></script>
+</head>
+<body id="mapPlanAWalk">
+<div class="container">
+    <header>
+        <a id="menuButton"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
+        <a href="planAWalk3.html" id="goBack"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></a>
+        <a href="index.html" id="logo"></a>
+    </header>
+    <nav id="navBar">
+        <ul id="menuList">
+            <li><a href="#"><img src="images/profile.png"><p></p></a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span> Notifications</a></li>
+            <li><a href="rating.html"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Rating</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Map</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Logout</a></li>
+        </ul>
+    </nav>
+    <aside>
+        <ul>
+            <li><a href="index.html">Homepage</a><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
+            <li><a href="setProfile.html">Will your dog join?</a><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
+            <li><a href="planAWalk3.html">Choose a date</a><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
+            <li id="currPage">Location and radius</li>
+        </ul>
+    </aside>
+    <main>
+        <h1>Select walk starting location and radius</h1>
+        <div id="map"></div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAr801gVa-9jWhnqYH2XiyJCMcrEfyaNnk&libraries=places&callback=initAutocomplete"
+                async defer></script>
+        <form method="">
+            <input id="pac-input" class="controls" type="text" placeholder="Insert Location Here">
+            <section id="errors">
+                <!--<h3>Walking radius is too big!</h3>-->
+            </section>
+            <input id="radiusInput" type="number" placeholder="Radius (Minimum 10)">
+        </form>
+        <a href="howManyDogs.html" id="continueMaps2">
+            <h3><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></h3>
+        </a>
+    </main>
+    <footer>
+        <a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+        <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
+    </footer>
+</div>
+</body>
+</html>

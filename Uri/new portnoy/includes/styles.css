@@ -1,0 +1,290 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Helvetica;
+    font-size: 100%
+}
+
+header, nav, main, footer, aside, section, article, a {
+    display: block;
+}
+
+#logo {
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+}
+
+.container {
+    padding: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+h2 {
+    color: #c6c6c6;
+    font-family: 'Anton', sans-serif;
+}
+
+@media (min-width: 640px) {
+    body {
+        background-color: green;
+    }
+}
+
+@media (max-width: 650px) {
+
+
+    .box{
+        margin-bottom:10%;
+        background-color: #e0e0e0;
+        border-radius: 25px;
+        margin-left:-20% !important;
+        z-index: 0;
+        height:100%;
+    }
+    .space{
+        margin-bottom: 15%;
+    }
+    .boxHeader{
+        color:#000000;
+        font-family: Roboto;
+        font-size: 50%;
+        text-align: center;
+    }
+    .doggerPIC{
+        margin-left: 8%;
+        z-index: 1;
+        border-radius: 50%;
+    }
+    .boxKM{
+        color:#c6c6c6;
+        font-family: Helvetica;
+        position: absolute;
+        left:25%;
+        bottom:-30%;
+    }
+    .sendRequest{
+        color:#00AA88;
+        margin-left:65%;
+        margin-top:-7%;
+        font-size: 180%;
+    }
+    .doggerDetails{
+        color:#c6c6c6 ;
+        margin-top: 0%;
+        margin-bottom: 2%;
+        font-family: 'Slabo 27px', serif;
+        margin-left: 3%;
+        font-size: 220%;
+    }
+    .doggerBigPIC{
+        width:50%;
+        height:50%;
+        border-radius: 30px;
+        margin-left:25%;
+        margin-top:5%;
+    }
+    .border{
+        border-top:1px solid ;
+        border-bottom: 1px solid;
+        border-color: #7a7979;
+    }
+
+    .Mheader{
+        text-align: center;
+        padding: 0;
+        margin-top: 40px;
+        font-size: 200%;
+    }
+    /*.border-bottom{*/
+        /*border-top:1px solid #E1E3E4;*/
+        /*opacity: 0.2;*/
+        /*margin-top: 5%;*/
+        /*!*margin-bottom:-10% !important;*!*/
+
+    /*}*/
+
+
+    .container {
+        background: #555555;
+        width: 100%;
+        min-height: 640px;
+        height: 10%;
+    }
+    #logo {
+        margin: auto;
+        width: 140px;
+        height: 57px;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        background: #333333;
+        /*height: 10%;*/
+        height: 64px;
+        width: 100%;
+        border-bottom: 1px solid black;
+        z-index:3;
+    }
+
+    header span {
+        float: right;
+        margin-right: 4%;
+        margin-top: 17px;
+        color: #c6c6c6;
+        font-size: 270%;
+    }
+
+    header > a > span {
+        border: 1px solid #c6c6c6;
+        color: #333333;
+        border-radius: 5px;
+        background: #c6c6c6;
+        float: left;
+        margin-left: 2%;
+    }
+
+    footer {
+        padding-top: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 7.8125%;
+        border-top: 1px solid black;
+        background: #333333;
+        z-index:3;
+    }
+
+    footer span {
+        /*margin-top: 10px;*/
+        color: #c6c6c6;
+        font-size: 270%;
+        /*border: 1px solid red;*/
+    }
+    footer span:nth-child(1) {
+        float: left;
+        margin-left: 5%;
+    }
+    footer span:nth-child(2) {
+        float: left;
+        margin-left: 20%;
+    }
+    footer span:nth-child(3) {
+        float: right;
+        margin-right: 5%;
+    }
+    footer span:nth-child(4) {
+        float: right;
+        margin-right: 20%;
+    }
+
+    /*Homepage Settings*/
+
+    #homepage main a {
+        margin: auto;
+        border: 1px solid transparent;
+        /*width: 64%;*/
+        width: 80%;
+        height: 240px;
+    }
+
+    #homepage main a:nth-child(1) {
+        /*border: 1px solid yellow;*/
+        background: url("../images/dogger2.png") no-repeat;
+    }
+
+    #homepage main a:nth-child(1) h2 {
+        margin-top: 200px;
+        text-align: center;
+    }
+
+    #homepage main a:nth-child(2) {
+        background: url("../images/map3-2.png") no-repeat;
+    }
+    #homepage main a:nth-child(2) h2 {
+        margin-top: 200px;
+        text-align: center;
+    }
+
+    #homepage main {
+        padding-top: 22px;
+        margin: auto;
+        width: 58.3333333333%;
+        margin-top: 64px;
+        /*height: 540px;*/
+        /*height: 82.34375%;*/
+    }
+
+    /*Find A Walker Flow*/
+   /*#findAwalker1 header a > span {*/
+       /*border: 1px solid #c6c6c6;*/
+       /*color: #333333;*/
+       /*border-radius: 5px;*/
+       /*background: #c6c6c6;*/
+       /*float: left;*/
+       /*margin-left: 2%;*/
+   /*}*/
+
+    #findAwalker1 main {
+        color: #c6c6c6;
+        border: 1px solid transparent;
+        margin-top: 64px;
+    }
+
+    /*#findAwalker1 main h3 {*/
+        /*padding: 0;*/
+        /*margin: 0;*/
+        /*font-size: 180%;*/
+    /*}*/
+
+    /*#findAwalker1 main h1 {*/
+        /*text-align: center;*/
+        /*padding: 0;*/
+        /*margin-top: 40px;*/
+        /*font-size: 200%;*/
+    /*}*/
+
+
+
+    #findAwalker1 main img:nth-child(2) {
+        padding-top: 50px;
+        /*margin-bottom: 100px;*/
+        display: block;
+        margin: auto;
+    }
+
+    #findAwalker1 main a:nth-child(3) {
+        padding-top: 0.7%;
+        text-align: center;
+        font-size: 160%;
+        text-decoration: none;
+        border-radius: 5px;
+        color: black;
+        margin: 25px auto 0 auto;
+        text-align: center;
+        display: block;
+        width: 50%;
+        height: 30px;
+        border: 1px solid black;
+        background: #46a546;
+    }
+
+    #findAwalker1 main h3:nth-child(4) {
+        margin-top: 180px;
+    }
+
+}
+
+@media (max-width: 502px) {
+    #homepage main a {
+        margin: auto;
+        border: 1px solid transparent;
+        width: 100%;
+        height: 240px;
+    }
+}
